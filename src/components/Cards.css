@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.card {
+    margin: -50px 2% 60px 2% !important;
+}
+.infected {
+    border-bottom: 10px solid rgba(0,0,255,0.5);
+}
+.recovered {
+    border-bottom: 10px solid rgba(0,255,0,0.5);
+
+}
+.deaths {
+    border-bottom: 10px solid rgba(255,0,0,0.5);
+}
+.loader{
+    margin: 50px !important;
+    font-size: 40px;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+    display:flex;
+    font-family: 'Pacifico';
+}
