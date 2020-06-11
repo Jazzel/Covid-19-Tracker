@@ -16,13 +16,15 @@ function App() {
     const fetchAPIData = async () => {
       const fetchedData = await fetchData();
       setData(fetchedData);
+      
     };
     fetchAPIData();
   }, []);
 
   const handleCountryChange = async (country) => {
-    setCountry(country);
     const fetchedData = await fetchData(country);
+    setCountry(country);
+    setData(fetchedData);
   };
   
 
