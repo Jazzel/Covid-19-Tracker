@@ -1,23 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 .card {
-    margin: -50px 2% 60px 2% !important;
+  margin: -50px 2% 60px 2% !important;
 }
 .infected {
-    border-bottom: 10px solid rgba(0,0,255,0.5);
+  border-bottom: 20px solid transparent;
+  -moz-border-image: -moz-linear-gradient(left, #ED213A 0%, #93291E 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, #ED213A 0%, #93291E 100%);
+  border-image: linear-gradient(to right, #ED213A 0%, #93291E 100%);
+  border-image-slice: 1;
 }
 .recovered {
-    border-bottom: 10px solid rgba(0,255,0,0.5);
+    border-bottom: 20px solid transparent;
+  -moz-border-image: -moz-linear-gradient(left, #38ef7d 0%, #11998e 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, #38ef7d 0%, #11998e 100%);
+  border-image: linear-gradient(to right, #38ef7d 0%, #11998e 100%);
+  border-image-slice: 1;
 
 }
 .deaths {
-    border-bottom: 10px solid rgba(255,0,0,0.5);
+  border-bottom: 20px solid transparent;
+  -moz-border-image: -moz-linear-gradient(left, #bdc3c7 0%, #2c3e50 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, #bdc3c7 0%, #2c3e50 100%);
+  border-image: linear-gradient(to right, #bdc3c7 0%, #2c3e50 100%);
+  border-image-slice: 1;
 }
-.loader{
-    margin: 50px !important;
-    font-size: 40px;
-    align-self: center;
-    margin: auto;
-    justify-content: center;
-    display:flex;
-    font-family: 'Pacifico';
+.loader {
+  margin: 50px !important;
+  font-size: 40px;
+  align-self: center;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  font-family: "Pacifico";
 }

@@ -5,3 +5,7 @@
     width: 100%;
     margin:auto;
 }
+.width-full {
+    width: 100% !important;
+
+}
