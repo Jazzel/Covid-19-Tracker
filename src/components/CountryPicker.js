@@ -12,6 +12,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "600px",
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
@@ -31,9 +35,18 @@ export const CountryPicker = ({ handleCountryChange }) => {
 
   return (
     <Grid container>
-      <Grid item xs={12} sm={6}>
+      <Grid
+        item
+        xs={12}
+        sm={12}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <FormControl className={classes.formControl}>
-          <InputLabel id="country-select">Age</InputLabel>
+          <InputLabel id="country-select">Country</InputLabel>
           <Select
             label="Country"
             id="country-select"
